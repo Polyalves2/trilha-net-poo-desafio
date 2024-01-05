@@ -14,7 +14,7 @@ class Program
         Console.WriteLine("\n");
 
         Console.WriteLine("Smartphone Iphone: ");
-        Smartphone iphone = new Iphone(numero: "8199876-5432", modelo: "14", imei: "5678", memoria: 128);
+        Smartphone iphone = new Iphone(numero: "8199876-5432", modelo: "12", imei: "5678", memoria: 128);
         iphone.ReceberLigacao();
         iphone.InstalarAplicativo("Instagram");
         iphone.AplicativoInstalado();
