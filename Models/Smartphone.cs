@@ -19,13 +19,19 @@ namespace DesafioPOO.Models
 
         public void Ligar()
         {
-            Console.WriteLine($"Ligando para Iphone ...");
+            Console.WriteLine($"Ligando para Iphone 12 ({81}) {9876}-{5432}");
         }
 
-        public void ReceberLigacao()
+        public void AtenderLigacao()
         {
-            Console.WriteLine($"Recebendo chamada de Nokia ...");
+            Console.WriteLine($"Atendendo chamada de Nokia C30 ({81}) {9712}-{5678}");
         }
+        
+        public void FinalizarChamada()
+        {
+             Console.WriteLine($"Chamada finalizada. Duração: {6} minutos e {30} segundos.");
+        }
+
         public void AplicativoInstalado()
         {
             Console.WriteLine($"Seu aplicativo foi instalado.");
