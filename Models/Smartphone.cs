@@ -19,12 +19,12 @@ namespace DesafioPOO.Models
 
         public void Ligar()
         {
-            Console.WriteLine($"Ligando para Iphone 12 ({81}) {9876}-{5432}");
+            Console.WriteLine($"Ligando para Iphone 12 ({81}) {99876}-{5432}");
         }
 
         public void AtenderLigacao()
         {
-            Console.WriteLine($"Atendendo chamada de Nokia C30 ({81}) {9712}-{5678}");
+            Console.WriteLine($"Atendendo chamada de Nokia C30 ({81}) {99712}-{5678}");
         }
         
         public void FinalizarChamada()
@@ -33,6 +33,10 @@ namespace DesafioPOO.Models
         }
 
         public void AplicativoInstalado()
+        {
+            Console.WriteLine($"Aplicativo instalado com sucesso!");
+        }
+        public void InstalouAplicativo()
         {
             Console.WriteLine($"Seu aplicativo foi instalado.");
         }
