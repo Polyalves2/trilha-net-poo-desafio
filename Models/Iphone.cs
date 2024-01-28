@@ -1,10 +1,10 @@
 namespace DesafioPOO.Models
 {
-    // TODO: Herdar da classe "Smartphone"
+    
     public class Iphone : Smartphone
     {
-    public Iphone(string numero, string modelo, string imei, int memoria)
-    : base(numero, modelo, imei, memoria)
+    public Iphone(string numero, string sistemaOperacional, string modelo, string imei, int memoria)
+      : base(numero, sistemaOperacional, modelo, imei, memoria)
     {
 
     }
@@ -12,5 +12,7 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine($"Instalando o aplicativo {nomeApp}...");
         }
+
+
     }
 }

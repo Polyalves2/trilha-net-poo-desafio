@@ -4,22 +4,24 @@ class Program
     
     static void Main()
     {
-// TODO: Realizar os testes com as classes Nokia e Iphone
-        Console.WriteLine("Nokia C30: ");
-        Smartphone nokia = new Nokia(numero: "(81)99712-5678", modelo: "Modelo C30", imei: "1234", memoria: 64);
+
+        Console.WriteLine("Nokia C30: Android ");
+        Smartphone nokia = new Nokia(sistemaOperacional: "Android", numero: "(81)99712-5678", modelo: "Modelo C30", imei: "1234", memoria: 64);
         nokia.Ligar();
         nokia.InstalarAplicativo("Telegram");
         nokia.InstalouAplicativo();
+        nokia.MensagemEnviada();
 
 
         Console.WriteLine("\n");
-        Console.WriteLine("Iphone 12: ");
-        Smartphone iphone = new Iphone(numero: "(81)99876-5432", modelo: "12", imei: "5678", memoria: 128);
+        Console.WriteLine("Iphone 12: iOS ");
+        Smartphone iphone = new Iphone(sistemaOperacional: " iOS", numero: "(81)99876-5432", modelo: "12", imei: "5678", memoria: 128);
         iphone.AtenderLigacao();
         Thread.Sleep(6*30);
         iphone.FinalizarChamada();
         iphone.InstalarAplicativo("Instagram");
         iphone.AplicativoInstalado();
+        iphone.RecebidaMensagem();
 
         Console.WriteLine("\n");
       

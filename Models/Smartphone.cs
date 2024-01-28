@@ -3,28 +3,30 @@ namespace DesafioPOO.Models
     public abstract class Smartphone
     {
         public string Numero { get; set; }
+        public string SistemaOperacional { get; set; }
         private string Modelo { get; }
         private string IMEI { get; }
         private int Memoria { get; } 
-        // TODO: Implementar as propriedades faltantes de acordo com o diagrama
 
-        public Smartphone(string numero, string modelo, string imei, int memoria)
+
+        public Smartphone(string numero, string sistema, string modelo, string imei, int memoria)
         {
-            Numero = numero;
-            Modelo = modelo;
-            IMEI = imei;
-            Memoria = memoria;
-            // TODO: Passar os parâmetros do construtor para as propriedades
+            this.Numero = numero;
+            this.SistemaOperacional = sistema;
+            this.Modelo = modelo;
+            this.IMEI = imei;
+            this.Memoria = memoria;
+            
         }
 
         public void Ligar()
         {
-            Console.WriteLine($"Ligando para Iphone 12 ({81}) {99876}-{5432}");
+            Console.WriteLine($"Ligando para Iphone12 ({81}) {99876}-{5432}");
         }
 
         public void AtenderLigacao()
         {
-            Console.WriteLine($"Atendendo chamada de Nokia C30 ({81}) {99712}-{5678}");
+            Console.WriteLine($"Atendendo chamada de NokiaC30 ({81}) {99712}-{5678}");
         }
         
         public void FinalizarChamada()
@@ -40,6 +42,20 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine($"Seu aplicativo foi instalado.");
         }
+
+        public void MensagemEnviada()
+        {
+            Console.WriteLine($"Enviando mensagem: Olá, tudo bem?");
+            Console.WriteLine($"Mensagem enviada!");
+
+        }
+        
+        public void RecebidaMensagem()
+        {
+           Console.WriteLine($"Recebendo mensagem: Tudo bem!");
+           Console.WriteLine($"Mensagem recebida com sucesso!");
+        }
+
         public abstract void InstalarAplicativo(string nomeApp);
     }
 }
