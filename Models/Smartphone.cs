@@ -31,22 +31,22 @@ namespace DesafioPOO.Models
         {
              Console.WriteLine($"Chamada finalizada no horário {DateTime.Now.ToString("HH:mm:ss")}");
         }
-        public void AplicativoInstalado()
+        public void AdicionarAplicativo()
         {
             Console.WriteLine($"Aplicativo instalado com sucesso!");
         }
-        public void InstalouAplicativo()
+        public void IncluirAplicativo()
         {
             Console.WriteLine($"Seu aplicativo foi instalado.");
         }
 
-        public void MensagemEnviada()
+        public void EnviarMensagem()
         {
             Console.WriteLine($"Enviando mensagem: Olá,tudo bem?");
             Console.WriteLine($"Mensagem enviada!");
         }
         
-        public void RecebidaMensagem()
+        public void ReceberMensagem()
         {
            Console.WriteLine($"Recebendo mensagem: Olá,tudo bem?");
            Console.WriteLine($"Mensagem recebida com sucesso!");

@@ -9,8 +9,8 @@ class Program
         Smartphone nokia = new Nokia(numero: "(81)99712-5678", modelo: "Modelo C30", imei: "1234", memoria: 64);
         nokia.Ligar();
         nokia.InstalarAplicativo("Telegram");
-        nokia.InstalouAplicativo();
-        nokia.MensagemEnviada();
+        nokia.IncluirAplicativo();
+        nokia.EnviarMensagem();
 
 
         Console.WriteLine("\n");
@@ -20,8 +20,8 @@ class Program
         Thread.Sleep(3000);
         iphone.FinalizarChamada();
         iphone.InstalarAplicativo("Instagram");
-        iphone.AplicativoInstalado();
-        iphone.RecebidaMensagem();
+        iphone.AdicionarAplicativo();
+        iphone.ReceberMensagem();
 
         Console.WriteLine("\n");
       
