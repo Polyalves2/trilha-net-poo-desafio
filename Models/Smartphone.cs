@@ -29,7 +29,7 @@ namespace DesafioPOO.Models
         
         public void FinalizarChamada()
         {
-             Console.WriteLine($"Chamada finalizada.   Hora: {DateTime.Now.ToString("HH:mm:ss")}");
+             Console.WriteLine($"Chamada finalizada no horário {DateTime.Now.ToString("HH:mm:ss")}");
         }
         public void AplicativoInstalado()
         {
