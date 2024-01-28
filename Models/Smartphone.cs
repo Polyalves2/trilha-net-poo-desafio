@@ -3,16 +3,14 @@ namespace DesafioPOO.Models
     public abstract class Smartphone
     {
         public string Numero { get; set; }
-        public string SistemaOperacional { get; set; }
         private string Modelo { get; }
         private string IMEI { get; }
         private int Memoria { get; } 
 
 
-        public Smartphone(string numero, string sistema, string modelo, string imei, int memoria)
+        public Smartphone(string numero, string modelo, string imei, int memoria)
         {
             this.Numero = numero;
-            this.SistemaOperacional = sistema;
             this.Modelo = modelo;
             this.IMEI = imei;
             this.Memoria = memoria;
@@ -45,14 +43,14 @@ namespace DesafioPOO.Models
 
         public void MensagemEnviada()
         {
-            Console.WriteLine($"Enviando mensagem: Olá, tudo bem?");
+            Console.WriteLine($"Enviando mensagem: Olá,tudo bem?");
             Console.WriteLine($"Mensagem enviada!");
 
         }
         
         public void RecebidaMensagem()
         {
-           Console.WriteLine($"Recebendo mensagem: Tudo bem!");
+           Console.WriteLine($"Recebendo mensagem: Olá,tudo bem?");
            Console.WriteLine($"Mensagem recebida com sucesso!");
         }
 
