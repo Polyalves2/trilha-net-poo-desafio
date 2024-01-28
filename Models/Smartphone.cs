@@ -10,10 +10,10 @@ namespace DesafioPOO.Models
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
-            this.Numero = numero;
-            this.Modelo = modelo;
-            this.IMEI = imei;
-            this.Memoria = memoria;
+            Numero = numero;
+            Modelo = modelo;
+            IMEI = imei;
+            Memoria = memoria;
             
         }
 
@@ -29,9 +29,8 @@ namespace DesafioPOO.Models
         
         public void FinalizarChamada()
         {
-             Console.WriteLine($"Chamada finalizada. Duração: {6} minutos e {30} segundos.");
+             Console.WriteLine($"Chamada finalizada.   Hora: {DateTime.Now.ToString("HH:mm:ss")}");
         }
-
         public void AplicativoInstalado()
         {
             Console.WriteLine($"Aplicativo instalado com sucesso!");
@@ -45,7 +44,6 @@ namespace DesafioPOO.Models
         {
             Console.WriteLine($"Enviando mensagem: Olá,tudo bem?");
             Console.WriteLine($"Mensagem enviada!");
-
         }
         
         public void RecebidaMensagem()

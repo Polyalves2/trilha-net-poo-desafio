@@ -17,7 +17,7 @@ class Program
         Console.WriteLine("Iphone 12: iOS ");
         Smartphone iphone = new Iphone(numero: "(81)99876-5432", modelo: "12", imei: "5678", memoria: 128);
         iphone.AtenderLigacao();
-        Thread.Sleep(6*30);
+        Thread.Sleep(3000);
         iphone.FinalizarChamada();
         iphone.InstalarAplicativo("Instagram");
         iphone.AplicativoInstalado();
